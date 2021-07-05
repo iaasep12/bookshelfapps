@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="input_section" align="center">
+        <div class="header-form">
+            <span id="close">&times;</span>
+            <h2 align="center">>Masukkan Buku Baru</h2>
+        </div>
+        <form id="inputBook">
+            <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputTitleBook" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputAuthorBook" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number" required>
+            </div>
+
+            <div class="input_inline">
+                <label for="inputBookIsComplete">Selesai dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox">
+            </div>
+
+            <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span id="spanIscompleted">belum selesai dibaca</span></button>
+        </form>
+    </div>
+
+    <header class="head_bar">
+        <div class="bar-container">
+            <img src="assets/svg/book-bar.svg">
+            <h1 class="head_bar__title">Bookshelf Apps</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-top">
+            <div class="col-left">
+                <div class="profile">
+                    <div class="lingkaran"></div>
+                    <div class="foto">
+                        <img src="assets/image/Ia Asep Sunarya Jpeg.jpg" height="150px">
+                    </div>
+                </div>
+
+                <section class="name-profile">
+                    <div class="bentuk"></div>
+                    <h3 id="profile-name">Ia Asep Sunarya</h3>
+                </section>
+
+                <section class="add-book">
+                    <h3>Tambah Buku</h3>
+                    <img src="assets/svg/plus.svg" id="add-button"> 
+                </section>
+
+                <section class="jumlah-buku">
+                    <h3>Jumlah Buku</h3>
+                    <span id="count">0</span>
+                </section>
+            </div>
+
+            <div class="col-right">
+                <h3>Assalamu alaikum Selamat Datang di Bookshelf Apps..!</h3>
+                <p>Mengelola buku jadi lebih mudah dan terencana dengan baik dalam 
+                    menambah wawasan dan untuk memperluas edukasi..</p>
+                <div class="container-right">
+                    <section class="book_shelf">
+                        <h3>Belum selesai dibaca</h3>
+                        <div id="incompleteBookshelfList" class="book_list">
+
+                        </div>
+                    </section>
+
+                    <section class="book_shelf">
+                        <h3>Selesai dibaca</h3>
+                        <div id="completeBookshelfList" class="book_list">
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-container img {
+    height: 70px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background: linear-gradient(-45deg, #F6B8B8, #CD5AB9);
+    height: 200px;
+    color: white;
+}
+
+main {
+    max-width: max-content;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.container-top{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -50px;
+}
+
+.col-left {
+    flex: 1;
+    background-color:white;
+    height: max-content;
+    border-radius: 5px;
+    margin-left: -10px;
+    box-shadow: 0px 4px 8px 0px rgba(43, 40, 40, 0.2);
+    padding: 30px;
+}
+
+.col-right {
+    margin-left: 20px;
+    flex: 2;
+    background-color: white;
+    border-radius: 5px;
+    height: max-content;
+    box-shadow: 0px 4px 8px 0px rgba(43, 40, 40, 0.2);
+    padding: 25px;
+}
+
+.col-right > p {
+    font-size: 13px;
+    display: block;
+    font-weight: bold;
+    color: #DEDEDE;
+}
+
+.col-right > h3 {
+    display: block;
+    font-weight: bold;
+    color: #AC66CC;
+}
+
+.container-right {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    height: max-content;
+    padding: 15px;
+}
+
+.foto img {
+    height: 150px;
+    width: 150px;
+    border-radius: 70%;
+    margin-top: -95px ;
+    margin-left: -155px;
+}
+
+.lingkaran {
+    height: 160px;
+    width: 160px;
+    border-radius: 70%;
+    margin-top: -100px ;
+    margin-left: 30px;
+    background-color:#FFED99;
+}
+
+.bentuk {
+    height: 30px;
+    width: 165px;
+    background-color: #F6B8B8;
+    /* border: 2px solid #FFED99; */
+    border-radius: 0px;
+    margin-left: -30px;
+}
+
+#add-button {
+    height: 80px;
+    width: 50px;
+}
+
+.add-book {
+    color: #343a40;
+    text-align: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+
+
+#profile-name {
+    display: block;
+    font-weight: bold;
+    color: #3a3f44;
+    margin-top:-30px;
+    margin-left: -20px;
+}
+
+.jumlah-buku {
+    text-align: center;
+}
+
+.jumlah-buku > h3 {
+    margin-bottom: 5px;
+}
+
+#count {
+    font-size: 24px;
+    color: #f830b6;
+    font-weight: bold;
+}
+
+#inputTitleBook, #inputAuthorBook, #inputBookYear {
+    border-color: seashell;
+}
+
+
+.input_section {
+    display: none;
+    z-index: 1;
+    box-shadow: 0px 5px 5px 0px #535355;
+    border-radius: 5px;
+    margin-right:25px ;
+    background: linear-gradient(-35deg, rgb(220, 238, 61),#FFED99);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0.7; */
+    position: fixed;
+    overflow: auto;
+}
+
+.input_section>h2 {
+    text-align: center;
+    color: white;
+}
+
+.input_section>form>.input {
+    margin: 8px 0;
+}
+
+.input_section>form>button {
+    background-color: #CD5AB9;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section>form>button>span {
+    font-weight: bold;
+}
+
+.input_section>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    color: #CD5AB9;
+}
+
+.input_section>form>.input>label {
+    color:#3a3f44 ;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input_section>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section>form>.input_inline>label {
+    color: #f830b6;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#close {
+    color :#f830b6;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-form{
+    padding: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-form h3 {
+    margin: 0px;
+    padding: 10px;
+}
+
+#inputBook {
+    flex-direction: row;
+    padding: 16px;
+}
+
+.bookShelf_section {
+    flex: 3;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px #a7a7ad;
+}
+
+.book_shelf {
+    flex: 2;
+    margin: 16px 0 0 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.book_shelf>h3 {
+    color: #343a40;
+}
+
+.book_shelf>.book_list {
+    padding: 16px;
+}
+
+.book_shelf>.book_list>.book_item {
+    padding: 8px 16px 16px 16px;
+    border: 2px solid #FFED99;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf>.book_list>.book_item>h3,
+p {
+    margin: 8px 0;
+}
+
+.book_shelf>.book_list>.book_item>.action>button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf>.book_list>.book_item>.action>.green {
+    background-color: rgb(94, 212, 94);
+    color: white;
+}
+
+.book_item {
+    background: linear-gradient(-45deg, #F6B8B8, #CD5AB9);
+    box-shadow: 0px 3px 5px 0px #a7a7ad;
+}
+
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+}
+
+.green {
+    display: flex;
+    background-color: greenyellow;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.red {
+    float: right;
+    background-color: rgb(199, 81, 81);
+    cursor: pointer;
+    color: white;
+    margin-top: -35px;
+    margin-right: 15px;
+    height: 35px;
+}
+
+
+.book_shelf>.book_list>.book_item>.action>.red {
+    background-color: rgb(199, 81, 81);
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1170px) {
+    .container-top{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .col-left {
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 1.2em;
+    }
+
+    .col-right {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #profile-name {
+        font-weight: bold;
+        color: #3a3f44;
+        margin-top:-30px;
+        margin-left: -15px;
+        margin-bottom: -85px;
+    }
+
+
+    .foto img {
+        height: 9em;
+        width: 9em;
+        border-radius: 70%;
+        margin-top: -2.5em ;
+        position: static;
+    }
+    
+    .lingkaran {
+        height: 10em;
+        width: 10.5em;
+        border-radius: 70%;
+        margin-top: -3em ;
+        background-color:#FFED99;
+        position:static;
+    }
+    
+    .bentuk {
+        height: 30px;
+        width: 11em;
+        background-color: #F6B8B8;
+        border: 2px solid #FFED99;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container-top{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 2.5em;
+    }
+
+    .col-left {
+        width: 100%;
+    }
+
+    .col-right {
+        width: 100%;
+    }
+
+    .foto img {
+        height: 148px;
+        width: 148px;
+        border-radius: 70%;
+        margin-top:-43px;
+    }
+    
+    .lingkaran {
+        height: 160px;
+        width: 160px;
+        border-radius: 70%;
+        margin-left: 90px;
+    }
+    
+    .bentuk {
+        height: 30px;
+        width: 165px;
+        background-color: #F6B8B8;
+        border: 2px solid #FFED99;
+        border-radius: 0px;
+        margin-left: -35px;
+    }
+
+    #profile-name {
+        font-weight: bold;
+        color: #3a3f44;
+        margin-top:-30px;
+        margin-left: -25px;
+        margin-bottom: 25px;
+    }
+
+    .container-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .book_shelf{
+        margin-bottom: -30px;
+    }
+
+    .red{
+        margin-right: 100px;
+    }
+
+   
+}
+
+@media screen and (max-width: 550px) {
+
+    .red{
+        margin-right: -8px;
+        
+    }
+
+   
+}
+
